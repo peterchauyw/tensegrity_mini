@@ -1,0 +1,209 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:id="@+id/scrollView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/linearContenedor">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_above="@+id/linearContenedorProbarConexion"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Conexion"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView"
+                        android:background="@drawable/berkeleylogo" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linearPruebaConexion">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="LED"
+                            android:id="@+id/tv_sendorldr"
+                            android:layout_below="@+id/buttonOn"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10dp" />
+
+                        <ToggleButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="toggleLed"
+                            android:id="@+id/toggleBtLed"
+                            android:checked="false" />
+
+                        <TextView
+                            android:id="@+id/sensorView0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="Calibration: "
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <ToggleButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Calibrate"
+                            android:id="@+id/toggleBtCalibrate"
+                            android:checked="false" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/linearSeparador"
+                    android:layout_margin="@dimen/linearSeparador"
+                    android:id="@+id/lineaSeparador"></LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:id="@+id/btMotor1"
+                        android:background="#ff4949" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2"
+                        android:id="@+id/btMotor2"
+                        android:background="#67fe5d" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:id="@+id/btMotor3"
+                        android:background="#fff756" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4"
+                        android:id="@+id/btMotor4"
+                        android:background="#ffffff" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5"
+                        android:id="@+id/btMotor5"
+                        android:background="#5a64f9" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6"
+                        android:id="@+id/btMotor6"
+                        android:background="#e229ff" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/linearContenedorSensorHumedadyTemperatura"
+                    android:weightSum="1"
+                    android:id="@+id/Sensores">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/linearSeparador"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/linearSeparador"
+                    android:id="@+id/lineaSeparador2"></LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtString"
+            android:text="String size = "
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txtString"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_alignParentBottom="true"
+            android:text="Received Data = "
+            android:textSize="15sp" />
+    </LinearLayout>
+</RelativeLayout>
