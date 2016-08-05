@@ -2,32 +2,46 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\OS\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.1\support-annotations-22.2.1.jar"
-        jumboMode="false"
+        jar="C:\Users\yuenwun\Desktop\Tensegrity mini\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
         revision="23.0.1"
-        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
-        <dex dex="C:\Users\OS\Downloads\Android\AndroinoBt\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.1_23c7cca408c184806f4234764573c493ba1785ee.jar" />
+        sha1="18eaec0556722e7fe8089ba8efc7cd27ece6ffc2">
+        <dex dex="C:\Users\yuenwun\Desktop\Tensegrity mini\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_c354171cffc0165135e6b5501fad546ac4663016.jar" />
     </item>
     <item
-        jar="C:\Users\OS\Downloads\Android\AndroinoBt\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
-        <dex dex="C:\Users\OS\Downloads\Android\AndroinoBt\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-22.2.1_207c96435dfe69df40bcdce4fab2e19504e03474.jar" />
-    </item>
-    <item
-        jar="C:\Users\OS\Downloads\Android\AndroinoBt\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="f8efd0096475e0daf054267b61544e10dc776503">
-        <dex dex="C:\Users\OS\Downloads\Android\AndroinoBt\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-22.2.1_7f8765582e09642bf0424f399e914168cfe20893.jar" />
-    </item>
-    <item
-        jar="C:\Users\OS\Downloads\Android\AndroinoBt\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\libs\internal_impl-22.2.1.jar"
-        jumboMode="false"
+        jar="C:\Users\yuenwun\Desktop\Tensegrity mini\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\libs\internal_impl-22.2.1.jar"
+        jumboMode="true"
         revision="23.0.1"
         sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
-        <dex dex="C:\Users\OS\Downloads\Android\AndroinoBt\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.1_550541d5fdfd2517c1523bbd250f68531cd355e0.jar" />
+        <dex dex="C:\Users\yuenwun\Desktop\Tensegrity mini\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.1_d8b9b38a4d4458e2748ee4a1f7afc2c5eaef3e53.jar" />
+    </item>
+    <item
+        jar="C:\Users\yuenwun\Desktop\Tensegrity mini\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="d4d76bd3d145e2d5fd4edbb25bb93f379384c054">
+        <dex dex="C:\Users\yuenwun\Desktop\Tensegrity mini\app\build\intermediates\pre-dexed\debug\instant-run_4e8d3183444eb1226aeecd5a89601e130e083432.jar" />
+    </item>
+    <item
+        jar="C:\Users\yuenwun\Desktop\Tensegrity mini\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="C:\Users\yuenwun\Desktop\Tensegrity mini\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-22.2.1_1003df2090b482ddcdc4a221d6bf668606542bbf.jar" />
+    </item>
+    <item
+        jar="C:\Users\yuenwun\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.1\support-annotations-22.2.1.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="C:\Users\yuenwun\Desktop\Tensegrity mini\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.1_056698443ee2aa074f909bbf9abeb6604defdf3e.jar" />
+    </item>
+    <item
+        jar="C:\Users\yuenwun\Desktop\Tensegrity mini\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="C:\Users\yuenwun\Desktop\Tensegrity mini\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-22.2.1_5e96837cead30815b7dd4ae3b25cf0653cb43fee.jar" />
     </item>
 
 </items>

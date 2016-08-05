@@ -100,42 +100,42 @@
                         android:layout_height="wrap_content"
                         android:text="1"
                         android:id="@+id/btMotor1"
-                        android:background="#ff4949" />
+                        android:background="#67fe5d" />
 
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="2"
                         android:id="@+id/btMotor2"
-                        android:background="#67fe5d" />
+                        android:background="#e229ff" />
 
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="3"
                         android:id="@+id/btMotor3"
-                        android:background="#fff756" />
+                        android:background="#ffffff" />
 
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="4"
                         android:id="@+id/btMotor4"
-                        android:background="#ffffff" />
+                        android:background="#5a64f9" />
 
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="5"
                         android:id="@+id/btMotor5"
-                        android:background="#5a64f9" />
+                        android:background="#fff756" />
 
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="6"
                         android:id="@+id/btMotor6"
-                        android:background="#e229ff" />
+                        android:background="#ff4949" />
 
                 </LinearLayout>
 
