@@ -9,6 +9,7 @@ import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothSocket;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
@@ -19,6 +20,7 @@ import android.widget.CompoundButton;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
+import android.os.Vibrator;
 
 public class MainActivity extends Activity {
 
@@ -28,6 +30,7 @@ public class MainActivity extends Activity {
     ToggleButton toggleLed, toggleCalibrate;
     Handler bluetoothIn;
 
+    private Vibrator myVib;
     final int handlerState = 0;        				 //used to identify handler message
     private BluetoothAdapter btAdapter = null;
     private BluetoothSocket btSocket = null;
@@ -47,9 +50,8 @@ public class MainActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_main);
-
+        myVib = (Vibrator) this.getSystemService(VIBRATOR_SERVICE);
         //Link the buttons and textViews to respective views
 
         txtString = (TextView) findViewById(R.id.txtString);
@@ -137,8 +139,9 @@ public class MainActivity extends Activity {
         btn1.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-
+                myVib.vibrate(1000);
                 if(event.getAction() == MotionEvent.ACTION_DOWN) {
+                    btn1.setBackgroundColor(Color.parseColor("#708090"));
                     Log.d("BTN1", "Bt1 moved down!");
                     if(toggleCalibrate.isChecked()){
                         contA++;
@@ -150,6 +153,7 @@ public class MainActivity extends Activity {
                 }
 
                 if(event.getAction() == MotionEvent.ACTION_UP) {
+                    btn1.setBackgroundColor(Color.parseColor("#67fe5d"));
                     Log.d("BTN1", "Bt1 moved UP!");
                     if (toggleCalibrate.isChecked()) {
                         contA++;
@@ -175,8 +179,9 @@ public class MainActivity extends Activity {
         btn2.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-
+                myVib.vibrate(1000);
                 if(event.getAction() == MotionEvent.ACTION_DOWN) {
+                    btn2.setBackgroundColor(Color.parseColor("#708090"));
                     Log.d("BTN2", "Bt2 moved down!");
                     if(toggleCalibrate.isChecked()){
                         contB++;
@@ -188,6 +193,7 @@ public class MainActivity extends Activity {
                 }
 
                 if(event.getAction() == MotionEvent.ACTION_UP) {
+                    btn2.setBackgroundColor(Color.parseColor("#e229ff"));
                     Log.d("BTN2", "Bt2 moved UP!");
                     if (toggleCalibrate.isChecked()) {
                         contB++;
@@ -214,8 +220,9 @@ public class MainActivity extends Activity {
         btn3.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-
+                myVib.vibrate(1000);
                 if(event.getAction() == MotionEvent.ACTION_DOWN) {
+                    btn3.setBackgroundColor(Color.parseColor("#708090"));
                     Log.d("BTN3", "Bt3 moved down!");
                     if(toggleCalibrate.isChecked()){
                         contC++;
@@ -227,6 +234,7 @@ public class MainActivity extends Activity {
                 }
 
                 if(event.getAction() == MotionEvent.ACTION_UP) {
+                    btn3.setBackgroundColor(Color.parseColor("#ffffff"));
                     Log.d("BTN3", "Bt3 moved UP!");
                     if (toggleCalibrate.isChecked()) {
                         contC++;
@@ -253,8 +261,9 @@ public class MainActivity extends Activity {
         btn4.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-
+                myVib.vibrate(1000);
                 if(event.getAction() == MotionEvent.ACTION_DOWN) {
+                    btn4.setBackgroundColor(Color.parseColor("#708090"));
                     Log.d("BTN4", "Bt4 moved down!");
                     if(toggleCalibrate.isChecked()){
                         contD++;
@@ -266,6 +275,7 @@ public class MainActivity extends Activity {
                 }
 
                 if(event.getAction() == MotionEvent.ACTION_UP) {
+                    btn4.setBackgroundColor(Color.parseColor("#5a64f9"));
                     Log.d("BTN4", "Bt4 moved UP!");
                     if (toggleCalibrate.isChecked()) {
                         contD++;
@@ -293,8 +303,9 @@ public class MainActivity extends Activity {
         btn5.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-
+                myVib.vibrate(1000);
                 if(event.getAction() == MotionEvent.ACTION_DOWN) {
+                    btn5.setBackgroundColor(Color.parseColor("#708090"));
                     Log.d("BTN5", "Bt5 moved down!");
                     if(toggleCalibrate.isChecked()){
                         contE++;
@@ -306,6 +317,7 @@ public class MainActivity extends Activity {
                 }
 
                 if(event.getAction() == MotionEvent.ACTION_UP) {
+                    btn5.setBackgroundColor(Color.parseColor("#fff756"));
                     Log.d("BTN5", "Bt5 moved UP!");
                     if (toggleCalibrate.isChecked()) {
                         contE++;
@@ -333,8 +345,9 @@ public class MainActivity extends Activity {
         btn6.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-
+                myVib.vibrate(1000);
                 if(event.getAction() == MotionEvent.ACTION_DOWN) {
+                    btn6.setBackgroundColor(Color.parseColor("#708090"));
                     Log.d("BTN6", "Bt6 moved down!");
                     if(toggleCalibrate.isChecked()){
                         contF++;
@@ -346,6 +359,7 @@ public class MainActivity extends Activity {
                 }
 
                 if(event.getAction() == MotionEvent.ACTION_UP) {
+                    btn6.setBackgroundColor(Color.parseColor("#ff4949"));
                     Log.d("BTN6", "Bt6 moved UP!");
                     if (toggleCalibrate.isChecked()) {
                         contF++;
